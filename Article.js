@@ -1,11 +1,12 @@
 export class Article { //####게시글 클래스
   #likeCount = 0;
 
-  constructor(title, content, writer) { // 생성자: 게시글의 기본 정보
+  constructor(title, content, writer, likeCount = 0) { // 생성자: 게시글의 기본 정보
     this.title = title;
     this.content = content;
     this.writer = writer;
     this.createdAt = new Date().toISOString();
+    this.#likeCount = likeCount;
   }
 
   like() { //####좋아요 기능: 좋아요 수 증가

@@ -1,8 +1,8 @@
 import { Product } from './Product.js'; //####product.js에서 Product 클래스 가져오기
 //####ElectronicProduct 클래스는 product 클래스를 상속받는다.
 export class ElectronicProduct extends Product {
-  constructor(name, desciption, price, tags, images, manufacturer) {
-      super(name, desciption, price, tags, images);
+  constructor(name, description, price, tags, images, manufacturer) {
+      super(name, description, price, tags, images);
       this.manufacturer = manufacturer; //####추가 프로퍼티(제조사)
   }
 }
